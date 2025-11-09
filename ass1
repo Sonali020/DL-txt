@@ -1,0 +1,11 @@
+from tensorflow.keras.datasets import mnist
+(x_train, y_train),(x_test,y_test) = mnist.load_data()
+from matplotlib import pyplot
+x_train.shape
+y_train.shape
+x_test.shape
+y_test.shape
+for i in range(9):
+   pyplot.subplot(330 + 1 + i)
+   pyplot.imshow(x_train[i], cmap=pyplot.get_cmap('grey'))
+   pyplot.show()
